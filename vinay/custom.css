@@ -1,0 +1,22 @@
+﻿body {
+}
+
+
+.tableRowHeader
+{
+	background-color:lightgray;
+	font-size:x-large;
+	font-family:Arial;
+}
+.tableRow
+{
+	background-color:lightgray;
+	font-size:large;
+	font-family:Arial;
+}
+.div
+{
+	background-color:blue;
+	font-size:x-large;
+	font-family:Arial;
+}
