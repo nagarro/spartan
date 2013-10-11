@@ -1,0 +1,17 @@
+<div id="divCharacterDetails">
+	<strong><%= PlayedBy %></strong> as <i><%= FirstName %> <%= LastName %></i> was amazing when he said:
+	<ul>
+		<% _.each(Dialogues, function(Dialogue){ %>
+			<li><%= Dialogue %></li>
+        <% }); %>
+	</ul>
+</div>
+
+<div id="divAddDialogues">
+	<form>
+		<h1>You know more memorable words from him? Let us know.</h1>
+		<span>Quote: </span>
+		<textarea id="txtQuote" rows="5" cols="40" ></textarea>
+		<button id="btnSave">Save</button>
+	</form>
+</div>

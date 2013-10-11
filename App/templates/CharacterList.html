@@ -1,0 +1,48 @@
+<table style="border: 1px;" cellpadding="1" cellspacing="1">
+	<caption>List of my favourite movie characters:</caption>
+	<tr>
+		<th>
+			First Name
+		</th>
+		<th>
+			Last Name
+		</th>
+		<th>
+			Played By
+		</th>
+		<th>
+			Click to see details
+		</th>
+	</tr>
+	<% var i = 0; %>
+	<% _.each(Characters, function(Character){ %>
+		<tr>
+			<td>
+				<%= Character.FirstName %>
+			</td>
+			<td>
+				<%= Character.LastName %>
+			</td>
+			<td>
+				<%= Character.PlayedBy %>
+			</td>
+			<td>
+				<% i++; %>
+				<a class="aCharacterDetails" index="<%= i %>" href="#">Click</a>
+			</td>
+		</tr>
+    <% }); %>
+</table>
+
+<div>
+	<form>
+		<h1>Add a memorable character</h1>
+		<span>First Name: </span> <input id='txtFirstName'/>
+		<br />
+		<span>Last Name: </span> <input id='txtLastName'/>
+		<br />
+		<span>Played By: </span> <input id='txtPlayedBy'/>
+		<br />
+		<button id="btnSave">Save</button>
+	</form>
+</div>
