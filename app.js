@@ -1,4 +1,4 @@
-// View for displaying users.
+// View for displaying users..
 define(function(require){
 	return {
 		initialize: function () {
