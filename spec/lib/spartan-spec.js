@@ -7,7 +7,7 @@ define(["spartan/spartan"], function (Spartan) {
         describe("Spartan Module", function () {
 
             it("should exist", function () {
-                expect(Spartan).to.not.equal(undefined);
+                Spartan.should.not.equal(undefined);
             });
         });
     });

@@ -28,4 +28,4 @@ Run `npm test`.
 
 # Contribute
 
-See the [contributing docs](https://github.com/nagarro/spartan/blob/master/contributing.md)
+See the [contributing docs](https://github.com/nagarro/spartan/blob/master/contributing.md).

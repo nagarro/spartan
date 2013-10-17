@@ -40,7 +40,9 @@ module.exports = function (grunt) {
                     optimize: "uglify2",
                     preserveLicenseComments: false,
                     paths: {
-                        spartan: "lib"
+                        spartan: "lib",
+                        jquery: "empty:",
+                        underscore: "empty:"
                     },
                     shim: {
                         underscore: {
@@ -50,7 +52,7 @@ module.exports = function (grunt) {
                     include: [
                         "spartan/spartan"
                     ],
-                    //exclude: ["jquery"],
+                    exclude: ["jquery"],
                     out: "dist/spartan.js"
                 }
             }
@@ -100,9 +102,6 @@ module.exports = function (grunt) {
                 options: {
                     urls: ["http://localhost:<%= connect.server.options.port %>/spec/index.html"]
                 }
-            },
-            options: {
-                run: true
             }
         },
         watch: {
