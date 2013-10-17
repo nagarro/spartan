@@ -79,8 +79,7 @@ module.exports = function (grunt) {
                 url: "<%= pkg.homepage %>",
                 options: {
                     paths: [ "lib" ],
-                    outdir: "docs",
-                    parseOnly: true
+                    outdir: "docs"
                 }
             }
         },
