@@ -1,6 +1,4 @@
-# Spartan 0.0.1
-
-<img src="https://raw.github.com/nagarro/spartan/master/spartan.png" width="300px" align="right">
+<img src="https://raw.github.com/nagarro/spartan/master/spartan.png" width="300px">
 
 [![Build Status](https://travis-ci.org/nagarro/spartan.png?branch=master)](https://travis-ci.org/nagarro/spartan)
 
