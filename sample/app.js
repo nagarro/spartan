@@ -1,4 +1,4 @@
-// View for displaying users..
+// View for displaying users.
 define(function(require){
 	return {
 		initialize: function () {
@@ -38,10 +38,34 @@ define(function(require){
 									IsSingle: false
 								});
 					userCollection.add(userModel);
+					
+					userModel = new UserModel({
+									id: '4',
+									Name: 'Anshul Rastogi',
+									Age: 28,
+									IsSingle: false
+								});
+					userCollection.add(userModel);
+					
+					userModel = new UserModel({
+									id: '5',
+									Name: 'Vinay Jha',
+									Age: 25,
+									IsSingle: true
+								});
+					userCollection.add(userModel);
+					
+					userModel = new UserModel({
+									id: '6',
+									Name: 'Prateek Kumar Pradeep',
+									Age: 23,
+									IsSingle: false
+								});
+					userCollection.add(userModel);
 
 					userView = new UserView({
 								el: '#container',
-								model: userCollection
+								collection: userCollection
 							  });
 					userView.render();
 				}

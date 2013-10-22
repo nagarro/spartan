@@ -13,7 +13,7 @@ define(function(require){
 					   render: function(){
 							this.$el.append(this.template(null));
 							
-							var gridView = new GridView({id: '#usersList', model: this.model});
+							var gridView = new GridView({id: '#usersList', collection: this.collection});
 							gridView.render();
 							
 							this.$el.find("#usersListContainer").append(gridView.el);
